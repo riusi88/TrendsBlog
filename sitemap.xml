@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc></loc>
+		<loc> HOMEPAGE URL HERE </loc>
 		<lastmod></lastmod>
-		<changefreq></changefreq>
-		<priority></priority>
+		<changefreq>weekly</changefreq>
+		<priority>0.9</priority>
+	</url>
+	<url>
+		<loc> ARTICLE 1 URL </loc>
+		<lastmod></lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc> ARTICLE 2 URL </loc>
+		<lastmod></lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc> ARTICLE 3 URL </loc>
+		<lastmod></lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc> ARTICLE 4 URL </loc>
+		<lastmod></lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1</priority>
+	</url>
+	<url>
+		<loc> ARTICLE 5 URL </loc>
+		<lastmod></lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1</priority>
 	</url>
 </urlset>
