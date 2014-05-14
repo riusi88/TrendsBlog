@@ -8,11 +8,18 @@ if ( !$_GET['title'] || !$_GET['comment']) {
 	die();
 }
 
+// escaping
+$title = mysqli_real_escape_string($connect, $_GET['title']);
+$title = htmlentities($title, ENT_QUOTES);
+
+$comment = mysqli_real_escape_string($connect, $_GET['comment']);
+$comment = htmlentities($comment, ENT_QUOTES);
+
+$referer = mysqli_real_escape_string($connect, $_SERVER['HTTP_REFERER']);
+$referer = htmlentities($referer, ENT_QUOTES);
+
 // if name and comment are both present
-$query = 'INSERT INTO comment (title, comment, page) VALUES ("' .  
-			$_GET["title"] . '","' . 
-			$_GET["comment"] . '","' . 
-			$_SERVER["HTTP_REFERER"] . '")';
+$query = 'INSERT INTO comment (title, comment, page) VALUES ("' . $title . '","' . $comment . '","' . $referer . '")';
 
 mysqli_query( $connect, $query ) or die( mysql_error() );
 
