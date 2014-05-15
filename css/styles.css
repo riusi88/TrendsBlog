@@ -60,13 +60,6 @@ p { font-size: 1em; }
 
 p + p { margin-top: 1em; }
 
-#wrapper,
-#top-header,
-#main,
-#bottom-footer {
-  width: 100%;
-}
-
 #wrapper {
   max-width: 1024px;
   margin: 0 auto;
