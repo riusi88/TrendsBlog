@@ -21,12 +21,15 @@ function ceLoadComments() {
 				$("#ce_list ul").append(
 					"<li><h5>" + 
 					this.title + 
-					"</h5><p>" +
-					this.comment +
-					"</p><time datetime='" + 
+					"</h5>"+
+                    "<time datetime='" + 
 					this.date +
 					"'>" + 
-					this.pubdate + "</time></li>"
+					this.pubdate + "</time>" +
+                    "<p>" +
+					this.comment +
+					"</p>"+
+                    "</li>"
 				);
 			});
 
