@@ -1,8 +1,8 @@
 <?php
 
 $connect = mysqli_connect(
-	'hostname',
-	'username',
-	'password',
-	'database'
+	'web445.webfaction.com',
+	'mb_admin',
+	'moviesandbeer',
+	'movies_and_beer'
 ) or die( mysql_error() );
