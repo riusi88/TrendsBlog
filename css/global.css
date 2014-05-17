@@ -56,9 +56,17 @@ h2 { font-size: 2.7em; }
 h3 { font-size: 2.2em; }
 h4 { font-size: 1.7em; }
 
-p { font-size: 1em; }
+h2, h3 {
+  margin-bottom: 4%;
+}
 
-p + p { margin-top: 1em; }
+p { 
+  font-size: 1.2em; 
+  line-height: 1.7em;
+  text-indent: 1.7em;
+}
+
+p + p { margin-top: 3% !important; }
 
 #wrapper {
   max-width: 1024px;
@@ -90,27 +98,45 @@ article + article {
 }
 
 
+
 /*--- Footer ---*/
 
 #bottom-footer {
-  border: 1px dashed blue;
+  border-top: 1px dashed #000;
 }
 
 
 /**************************/
 /*----- Media Queries-----*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1040px) {
   #bottom-footer {
     text-align: center;
   }
 }
 
-@media screen and (max-width: 768px) {
-  h1 { font-size: 2.7em; }
-  h2 { font-size: 2.3em; }
-  h3 { font-size: 1.8em; }
-  h4 { font-size: 1.3em; }
+@media screen and (max-width: 783px) {
+  h1 { font-size: 2.5em; }
+  h2 { font-size: 2.1em; }
+  h3 { font-size: 1.6em; }
+  h4 { font-size: 1.1em; }
 
-  p { font-size: .9em; }
+  p { 
+    font-size: 0.9em; 
+    line-height: 1.7em;
+    text-indent: 1.5em;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  h1 { font-size: 2.1em; }
+  h2 { font-size: 1.7em; }
+  h3 { font-size: 1.2em; }
+  h4 { font-size: 1em; }
+
+  h2, h3 {
+    margin-bottom: 7%;
+  }
+
+  small { font-size: 0.9em; }
 }

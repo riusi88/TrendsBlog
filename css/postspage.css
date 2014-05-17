@@ -1,1 +1,60 @@
+.post em { font-style: italic; }
 
+.post footer {
+	position: relative;
+	margin-top: 3%;
+	padding-bottom: 5%;
+
+	border-bottom: 1px dashed orange;
+}
+
+.post .dots {
+	position: absolute;
+	left: 33%;
+	right: 33%;
+	top: 0px;
+	font-size: 2em;
+	text-align: center;
+	letter-spacing: 0.25em;
+}
+
+.post time:before {
+	content: "";
+	display: inline-block;
+	height: 60px;
+}
+
+.post time, .post .by, .post .tags {
+	font-style: italic;
+	color: #555;
+}
+
+.post time {
+	display: block;
+	padding-top: 2.5%;
+	text-align: center;
+}
+
+.post .by {
+	margin: 1.5% 0;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.post .tags { text-align: center; }
+
+@media screen and (max-width: 1045px) {
+  .post {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 435px) {
+	h3 {
+		text-align: center;
+	}
+
+	.post time, 
+	.post .by,
+	.post .tags { font-size: 0.9em; }
+}
