@@ -11,7 +11,7 @@ $(document).ready(function() {
 
 function ceLoadComments() {
 	$.ajax({
-		url: "ce/loadComment.php",
+		url: "../ce/loadComment.php",
 		dataType: "json",
 		success: function(data) {
 
@@ -41,7 +41,7 @@ function ceAddComment() {
 			title: $("#ce_title").val(),
 			comment: $("#ce_comment").val()
 		},
-		url: "ce/addComment.php",
+		url: "../ce/addComment.php",
 		dataType: "json",
 		success: function(data) {
 			console.log(data);
