@@ -68,6 +68,8 @@ p {
 
 p + p { margin-top: 3% !important; }
 
+strong { font-weight: bold; }
+
 #wrapper {
   max-width: 1024px;
   margin: 0 auto;
