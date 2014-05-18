@@ -90,9 +90,60 @@ strong { font-weight: bold; }
 /*--- Header ---*/
 
 #top-header {
-  border: 1px dashed red;
+  margin-top: 2em;
+  text-align: center;
+  border-top: 4px solid #000000;
+  padding-top: 24px;
+  padding-bottom: 0;
 }
 
+#top-header img {
+  max-width: 450px;
+  width: 100%;
+}
+
+#top-header h1 {
+  position: relative;
+  font-size: 4em;
+  font-family: 'Playfair Display: ;', serif;
+  font-weight: bold;
+  font-variant: small-caps;
+  text-shadow: 3px 3px 2px rgba(150, 150, 150, 1);
+  -moz-text-shadow: 3px 3px 2px rgba(150, 150, 150, 1);
+  -webkit-text-shadow: 3px 3px 2px rgba(150, 150, 150, 1);
+  -o-text-shadow: 3px 3px 2px rgba(150, 150, 150, 1);
+
+}
+
+#top-header h1 span {
+  font-size: .5em;
+}
+
+#top-header a {
+  text-decoration: none;
+  color: #000000;
+}
+
+nav {
+  margin: 0 auto;
+  width:80%;  
+  border-top: 1px solid #c1c1c1;
+  padding-top: 1em;
+  margin-top: 1em; 
+}
+
+nav ul {  
+
+}
+
+nav ul li {
+  display: inline;
+  letter-spacing: .1em;
+}
+
+nav ul li:first-child {
+  padding-right: 1em;
+}
 
 /*--- Main ---*/
 
