@@ -1,27 +1,15 @@
 .post em { font-style: italic; }
 
 .post footer {
-	position: relative;
 	margin-top: 3%;
 	padding-bottom: 5%;
-
-	border-bottom: 1px dashed orange;
 }
 
 .post .dots {
-	position: absolute;
-	left: 33%;
-	right: 33%;
-	top: 0px;
+	padding-bottom: 15px;
 	font-size: 2em;
 	text-align: center;
 	letter-spacing: 0.25em;
-}
-
-.post time:before {
-	content: "";
-	display: inline-block;
-	height: 60px;
 }
 
 .post time, .post .by, .post .tags {
