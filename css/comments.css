@@ -6,15 +6,27 @@ input, textarea {
 }
 
 #ce_list {
-    max-width: 400px;
+    font-size: 12px;
+    max-width: 600px;
+}
+
+#ce_list h5 {
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+time {
+    color: #666;
+    padding-bottom: 14px;
 }
 
 #ce_list ul {
+   margin-top: 14px;
    padding-left: 0;
 }
 
 #ce_list ul li {
    list-style: none;
-   padding-bottom: 1em;
-   border-bottom: 3px solid #d8d8d8;
+   padding: 14px 0;
+   border-bottom: 1px solid #d8d8d8;
 }
