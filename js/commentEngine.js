@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$("#comments").html('<h4>Comments</h4><section id="ce_list"></section><form id="ce_form" method="post"><label for="ce_title">Title:</label><input type="text" id="ce_title" name="ce_name"><label for="ce_comment">Comment:</label><textarea id="ce_comment" name="ce_comment" cols="30" rows="10"></textarea><input type="submit" value="Add Comment"></form>');
+	$("#comments").html('<h4>Comments</h4><section id="ce_list"></section><h5>Post a Comment</h5><form id="ce_form" method="post"><label for="ce_title">Title:</label><input type="text" id="ce_title" name="ce_name"><label for="ce_comment">Comment:</label><textarea id="ce_comment" name="ce_comment" cols="30" rows="10"></textarea><input type="submit" value="Add Comment"></form>');
 
 	$("#ce_form").submit(function() {
 		ceAddComment();
@@ -22,6 +22,7 @@ function ceLoadComments() {
 					"<li><h5>" + 
 					this.title + 
 					"</h5>"+
+                    "<span class='posted'>Date posted: </span>"+
                     "<time datetime='" + 
 					this.date +
 					"'>" + 

@@ -5,9 +5,14 @@ input, textarea {
    border: 1px solid #d8d8d8;
 }
 
+#comments {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 #ce_list {
     font-size: 12px;
-    max-width: 600px;
+    margin-bottom: 14px;
 }
 
 #ce_list h5 {
@@ -15,9 +20,20 @@ input, textarea {
     padding: 10px 0;
 }
 
-time {
+#ce_list p {
+    margin-top: 10px;
+}
+
+#ce_form label {
+    font-size: 14px;
+}
+
+#ce_form {
+    margin-top: 12px;
+}
+
+time, .posted {
     color: #666;
-    padding-bottom: 14px;
 }
 
 #ce_list ul {
