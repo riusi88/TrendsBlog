@@ -1,5 +1,5 @@
 #recent {
-  width: 700px;
+  width: 100%;
   margin: 0 auto;
 }
 #recent article {
@@ -14,6 +14,17 @@
 #recent h3 a {
   text-decoration: none;
   color: black;
+}
+#recent a {
+  color: blue;
+  -webkit-transition: color 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+  -moz-transition: color 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+  -ms-transition: color 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+  -o-transition: color 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+  transition: color 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
+}
+#recent a:hover {
+  color: #5A1900;
 }
 #recent img {
   width: 100%;
@@ -33,6 +44,12 @@
   float: right;
   font-style: italic;
 }
+#recent .tags {
+  margin-top: 20px;
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
 #recent p {
   clear: both;
   margin-top: 10px;
@@ -44,37 +61,21 @@
   margin: 0 auto;
   width: 80%;
 }
-#recent .tags {
-  margin: 20px 0 0 0;
-  text-align: center;
-}
-#recent .tags a {
-  display: inline-block;
-  background: none repeat scroll 0% 0% #F2F2F2;
-  color: #999;
-  -webkit-transition: color 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
-  -moz-transition: color 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
-  -ms-transition: color 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
-  -o-transition: color 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
-  transition: color 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s, border-color 0.2s ease-in-out 0s;
-  border: 1px solid #E4E4E2;
-  text-decoration: none;
-  font-style: italic;
-  font-size: 0.9em;
-  line-height: inherit;
-  padding: 2px 8px 3px;
-  margin: 3px 1px;
-}
-#recent .tags a:hover {
-  color: red;
-  background-color: yellow;
-  border-color: yellow;
-}
 #recent footer {
   padding-bottom: 30px;
   margin-bottom: 30px;
   margin-top: 15px;
   border-bottom: 1px #ddd solid;
+}
+@media screen and (max-width: 1045px) {
+  /* Other option:
+    #recent h3, #recent .info_container, #recent p, #recent footer {
+      padding: 0 5%;
+    }*/
+  article {
+    padding: 0 5%;
+    margin: 0 auto;
+  }
 }
 
 /* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
