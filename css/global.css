@@ -182,6 +182,10 @@ article + article {
   margin-top: 8%;
 }
 
+#main img {
+  border: 1px solid #efefef;
+  padding: 10px;
+}
 
 
 /*--- Footer ---*/
