@@ -10,13 +10,13 @@ if ( !$_GET['title'] || !$_GET['comment']) {
 
 // escaping
 $title = mysqli_real_escape_string($connect, $_GET['title']);
-$title = htmlentities($title, ENT_QUOTES);
+$title = strip_tags($title);
 
 $comment = mysqli_real_escape_string($connect, $_GET['comment']);
-$comment = htmlentities($comment, ENT_QUOTES);
+$comment = strip_tags($comment);
 
 $referer = mysqli_real_escape_string($connect, $_SERVER['HTTP_REFERER']);
-$referer = htmlentities($referer, ENT_QUOTES);
+$referer = htmlentities($referer);
 
 // if name and comment are both present
 $query = 'INSERT INTO comment (title, comment, page) VALUES ("' . $title . '","' . $comment . '","' . $referer . '")';
