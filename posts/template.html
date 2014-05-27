@@ -21,13 +21,23 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="../css/global.css">
-	<link rel="stylesheet" href="../css/postspage.css">
+	<link rel="stylesheet" href="../css/global2.css">
+	<link rel="stylesheet" href="postspage.css">
 	<link rel="stylesheet" href="../css/comments.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-50369053-3', 'devenjuta.com');
+	  ga('send', 'pageview');
+	</script>
 </head>
 <body>
 	<div id="wrapper">
@@ -76,27 +86,27 @@
 		</div>
 		
 		<aside>
+	
+			<div id="social">
+				<a href="http://www.facebook.com/sharer/sharer.php?u=http://devenjuta.com/moviesandbeer/posts/......."><img src="../img/fbLike.png" height="34" width="auto" alt=""></a>
+				
+				<a href="http://www.reddit.com/submit" onclick="window.location = 'http://www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false"><img src="../img/reddit.png" height="34" width="133" alt=""></a>
+
+				<a href="http://twitter.com/intent/tweet?text=Message&amp;url="><img src="../img/tweet.png" height="34" width="auto" alt=""></a>
+			</div>
 
 			<div id="comments"></div>
 		</aside>
 
-		<footer id="bottom-footer">
-			<small>Movies &amp; Beer &copy; 2014</small>
-		</footer>
 	</div>
+
+	<footer id="bottom-footer">
+		<div id="fWrapper">
+			<small>Movies &amp; Beer &copy; 2014</small>
+		</div>
+	</footer>
 
 	<script src="../js/jquery-1.11.0.min.js"></script>
 	<script src="../js/commentEngine.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-50369053-3', 'devenjuta.com');
-  ga('send', 'pageview');
-
-</script>
-
 </body>
 </html>

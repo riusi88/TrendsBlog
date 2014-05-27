@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'beerFont';
-    src: url(/fonts/dkhokitika.eot);
-    src: url(/fonts/dkhokitika.eot?#iefix) format('embedded-opentype'),
-         url(/fonts/dkhokitika.woff) format('woff'),
-         url(/fonts/dkhokitika.ttf) format('truetype'),
-         url(/fonts/dkhokitika.svg#dk_hokitikaregular) format('svg');
+    src: url(../fonts/dkhokitika.eot);
+    src: url(../fonts/dkhokitika.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/dkhokitika.woff) format('woff'),
+         url(../fonts/dkhokitika.ttf) format('truetype'),
+         url(../fonts/dkhokitika.svg#dk_hokitikaregular) format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -50,6 +50,16 @@
 }
 
 .post .tags { text-align: center; }
+
+#social {
+	margin-bottom: 2.5%;
+	padding: 2.5% 0;
+	text-align: center;
+}
+
+#social a + a {
+	padding-left: 3%;
+}
 
 @media screen and (max-width: 1045px) {
   .post {
