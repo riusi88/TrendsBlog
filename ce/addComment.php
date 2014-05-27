@@ -16,7 +16,7 @@ $comment = mysqli_real_escape_string($connect, $_GET['comment']);
 $comment = strip_tags($comment);
 
 $referer = mysqli_real_escape_string($connect, $_SERVER['HTTP_REFERER']);
-$referer = htmlentities($referer);
+$referer = htmlentities($referer, ENT_QUOTES);
 
 // if name and comment are both present
 $query = 'INSERT INTO comment (title, comment, page) VALUES ("' . $title . '","' . $comment . '","' . $referer . '")';
