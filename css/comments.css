@@ -6,8 +6,13 @@ input, textarea {
 }
 
 #comments {
-    max-width: 600px;
+    width: 80%;
     margin: 0 auto;
+}
+
+#comments input[type=text],
+#comments textarea {
+  width: 100%;  
 }
 
 #ce_list {

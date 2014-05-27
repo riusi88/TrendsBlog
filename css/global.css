@@ -84,6 +84,8 @@ p + p { margin-top: 3% !important; }
 
 strong { font-weight: bold; }
 
+em { font-style: italic; }
+
 #wrapper {
   max-width: 1024px;
   margin: 0 auto;
@@ -126,6 +128,9 @@ font-family:'beerFont';
   border-bottom:50px solid black;
   position:relative;
   overflow:hidden;
+}
+#letterBox h1 {
+  margin-bottom: 1.5%;
 }
 #top-header img {
   max-width: 450px;
@@ -380,6 +385,7 @@ article + article {
     color: #fff;
     font-family:'beerFont';
     padding: 25px 15px 25px;
+    text-align: center;
 }
 #bottom-footer a {
     color:white;
@@ -420,12 +426,6 @@ article + article {
 /**************************/
 /*----- Media Queries-----*/
 
-@media screen and (max-width: 1040px) {
-  #bottom-footer {
-    text-align: center;
-  }
-}
-
 @media screen and (max-width: 783px) {
   #top-header h1 { font-size: 2.5em; }
   h2 { font-size: 2.2em; }
@@ -455,7 +455,7 @@ article + article {
   #top-header h1 { font-size: 2.1em; }
   h2 { font-size: 1.8em; }
   h3 { font-size: 1.2em; }
-  h4 { font-size: 1em; }
+  h4 { font-size: 1.2em; }
 
   h2, h3 {
     margin-bottom: 7%;
