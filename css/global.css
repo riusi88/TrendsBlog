@@ -375,7 +375,21 @@ article + article {
   margin-top: 8%;
 }
 
-
+#bLinkWrapper{
+	margin-top:5%;
+}
+#bLinkWrapper a{
+	text-decoration:underline;
+	display:block;
+	color:#6F6F6F;
+	padding:1%;
+}
+#bLinkWrapper a:hover{
+	color:#3498db;
+}
+#bLinkWrapper h3{
+	text-decoration:underline;
+}
 
 /*--- Footer ---*/
 
